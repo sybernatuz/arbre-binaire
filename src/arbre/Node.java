@@ -64,10 +64,7 @@ class Node<T extends Comparable<?>> implements Cloneable {
 		if (isEmpty() || this.getRight() == null) 
 			return null;
 		Node<T> newNodes = this.clone().getRight();
-		if (newNodes == null)
-			return null;
-		if (newNodes.getLeft() != null) 
-			this.setRight(newNodes.getLeft());
+		this.setRight(newNodes.getLeft());
 		newNodes.setLeft(this);
 		return newNodes;
 	}

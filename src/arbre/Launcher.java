@@ -7,9 +7,9 @@ public class Launcher {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		//Node<Integer> nodes = initialize();
+		Node<Integer> nodes = initialize();
 		
-		Node<Integer> nodes = new Node<Integer>(2);
+//		Node<Integer> nodes = new Node<Integer>(2);
 //        Node<Integer> n11 = new Node<Integer>(7);
 //        Node<Integer> n12 = new Node<Integer>(5);
 //        Node<Integer> n21 = new Node<Integer>(2);
