@@ -47,7 +47,7 @@ class Node<T extends Comparable<?>> implements Cloneable {
 
 	public boolean isBalanced() {
 		if (isEmpty())
-			return false;
+			return true;
 		Integer leftHeight = (this.getLeft() != null) ? this.getLeft().height() : -1;
 		Integer rightHeight = (this.getRight() != null) ? this.getRight().height() : -1; 
 		Integer leftHeightMinusRightHeight = leftHeight - rightHeight;
